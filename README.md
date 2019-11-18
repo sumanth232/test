@@ -1,4 +1,4 @@
-# SVM for Trading !
+# SVR/SVC for Trading !
 
 Tested the approach on GOG.csv, 8 years data 
 
@@ -61,3 +61,29 @@ Precision of Test set = 91.04% (Percentage of True Positives out of Predicted Po
 RMSE of Training set: 5.592886479250125
 RMSE of Test set: 3.9099973736201394
 ```
+
+**Plots :**
+
+The plots of portfolio value versus time, is shown below, for both SVC and SVR.
+The base line portfolio (Buy and Hold) is also shown in the plots for comparison.
+
+![alt text](https://github.com/sumanth232/test/blob/master/svc_.png)
+![alt text](https://github.com/sumanth232/test/blob/master/svr_.png)
+
+
+**Plots with good and bad trade entries :**
+A smaller period is selected to show the good and bad trade entries of the SVR/SVC strategies.
+A green vertical line indicates the buy trade resulted in a profit after the fixed number of days when exited (sold).
+Similarly a red vertical line indicates a loss on the trade. 
+
+![alt text](https://github.com/sumanth232/test/blob/master/svc_trades.png)
+![alt text](https://github.com/sumanth232/test/blob/master/svr_trades.png)
+
+**Observation :**
+
+We can observe the Support vector trading strategy, correctly predicting a downfall, and avoiding any buy orders
+during a continuous decline in price.
+
+Also, we can see, Support Vector classification performing better than the Regression trading model.
+
+Through this experiment, we can observe that SVC model is able to predict between
